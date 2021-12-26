@@ -1,3 +1,6 @@
 [submodule "source/libs/spdlog"]
 	path = source/libs/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "source/libs/optick"]
+	path = source/libs/optick
+	url = https://github.com/bombomby/optick
