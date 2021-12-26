@@ -1,8 +1,11 @@
-﻿// hz.h : Include file for standard system include files,
-// or project specific include files.
+﻿#pragma once
 
-#pragma once
+class CEngine 
+{
+public:
+	static void StartUp();
+	static void RunTime();
+	static void Shutdown();
 
-#include <iostream>
-
-// TODO: Reference additional headers your program requires here.
+	static bool m_ShutDown;
+};

@@ -1,11 +1,8 @@
-﻿# CMakeList.txt : CMake project for hz, include source and define
-# project specific logic here.
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.8)
 
-project ("hz")
+project (hz)
 
-# Add source to this project's executable.
-add_executable (hz "source/hz.cpp" "source/hz.h")
+add_executable (hz "source/hz.cpp" "source/hz.h" "source/core/Log.cpp" "source/core/Log.h" "source/core/Base.h"  "source/core/BaseSystem.h"   "source/core/BaseSystem.cpp" "source/core/Assert.h")
 
-# TODO: Add tests and install targets if needed.
+include_directories("source/libs/spdlog/include/")
+include_directories("source/")
